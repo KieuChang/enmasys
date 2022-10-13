@@ -8,9 +8,13 @@
                 <tree string="Project Study Action">
                     <field name="name"/>
                     <field name="dateline"/>
+                    <field name="assign_to_id"/>
+                    <field name="assignee_update_at" />
+                    <field name="tags"/>
                     <field name="project_managers_ids"/>
                     <field name="task_attendees_ids" widget="Many2many_tags"/>
                     <field name="status"/>
+                    <field name="customer_id"/>
 
                 </tree>
             </field>
@@ -28,8 +32,11 @@
                             <group>
                                 <field name="status"/>
                                 <field name="assign_to_id"/>
+                                <field name="assignee_update_at"/>
+                                <field name="tags"/>
                             </group>
                             <group>
+                                 <field name="customer_id"/>
                                 <field name="dateline"/>
                                 <field name="note"/>
                             </group>
